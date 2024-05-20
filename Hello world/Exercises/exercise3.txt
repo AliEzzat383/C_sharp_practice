@@ -1,0 +1,16 @@
+public class Program
+{
+    public static void Main()
+    {
+        Console.Write(Program.UpToNum(7));
+    }
+    public static int UpToNum(int num)
+    {
+        int total=0;
+        for(int i=1;i<=num;i++)
+        {
+            total+=i;
+        }
+        return total;
+    }
+}

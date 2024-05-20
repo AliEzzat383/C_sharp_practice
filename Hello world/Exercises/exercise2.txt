@@ -1,0 +1,12 @@
+public class Program
+{
+    public static void Main()
+    {
+        int total=0;
+        for(int i=1;i<=10;i++)
+        {
+            total+=i;
+        }
+        Console.Write(total);
+    }
+

@@ -1,0 +1,19 @@
+// public class Solution {
+//     public static double[] ConvertTemperature(double celsius) 
+//     {
+//         double[] res=new double[2];
+//         res=[celsius+273.15,(9.0 / 5.0) * celsius + 32];
+//         return res;
+//     }
+   
+// }
+// public class Program{
+//      public static void Main()
+//     {
+//         double num=36.5;
+//         double[] res=Solution.ConvertTemperature(num);
+//         Console.Write(res[0]);
+//         Console.Write(" ");
+//         Console.Write(res[1]);
+//     }
+// }

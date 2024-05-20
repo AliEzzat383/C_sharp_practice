@@ -1,0 +1,24 @@
+public class Solution 
+{
+    public int NumJewelsInStones(string jewels, string stones) 
+    {
+        int count = 0;
+        foreach(char s in stones){
+            if(jewels.Contains(s)){
+                count++;
+            }
+        }
+    return count;
+    }
+}
+
+
+public class Program{
+     public static void Main()
+    {
+        string jewels = "aA";
+        string stones = "aAAbbbb";
+        Solution p = new Solution();
+        Console.Write(p.NumJewelsInStones(jewels,stones));
+    }
+}

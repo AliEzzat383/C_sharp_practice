@@ -1,0 +1,14 @@
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\bin\Debug\net8.0\Hello world.exe
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\bin\Debug\net8.0\Hello world.deps.json
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\bin\Debug\net8.0\Hello world.runtimeconfig.json
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\bin\Debug\net8.0\Hello world.dll
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\bin\Debug\net8.0\Hello world.pdb
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\Hello world.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\Hello world.AssemblyInfoInputs.cache
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\Hello world.AssemblyInfo.cs
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\Hello world.csproj.CoreCompileInputs.cache
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\Hello world.dll
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\refint\Hello world.dll
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\Hello world.pdb
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\Hello world.genruntimeconfig.cache
+C:\Users\Ali Ezzat\OneDrive\Desktop\Dev history\C sharp dev\Hello world\obj\Debug\net8.0\ref\Hello world.dll

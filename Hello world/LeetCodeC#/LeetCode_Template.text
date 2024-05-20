@@ -1,0 +1,15 @@
+// public class Solution
+// {
+//     public bool function(string s)
+//     {
+  
+//     }
+// }
+// public class Program{
+//      public static void Main()
+//     {
+//         data type x=  ;
+//         Solution p = new Solution();
+//         Console.Write(p.function(x));
+//     }
+// }
