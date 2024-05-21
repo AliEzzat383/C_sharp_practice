@@ -1,0 +1,19 @@
+public class Solution {
+    public string FirstPalindrome(string[] words) {
+        
+        foreach(string word in words){
+            if (word == new string(word.Reverse().ToArray())){
+                return word;
+            }
+        }
+        return "";
+    }
+}
+
+public class Program {
+    public static void Main() {
+        string[] words = ["abc","car","ada","racecar","cool"];
+        Solution p = new Solution();
+        Console.Write(p.FirstPalindrome(words));
+    }
+}

@@ -1,0 +1,20 @@
+public class Solution {
+    public string ReversePrefix(string word, char ch) {
+       int i = word.IndexOf(ch);
+       if(i!=-1){
+       string prefix = new string (word[..(i + 1)].Reverse().ToArray());
+       string suffix = word[(i+1)..];
+       word=prefix+suffix;
+       }
+       return  word;
+    }
+}
+
+public class Program {
+    public static void Main() {
+        string word = "abcdefd";
+        char ch = 'd';
+        Solution p = new Solution();
+        Console.Write(p.ReversePrefix(word, ch));
+    }
+}

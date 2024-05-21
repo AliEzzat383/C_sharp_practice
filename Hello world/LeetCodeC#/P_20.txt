@@ -1,0 +1,29 @@
+using System.Text;
+
+public class Solution {
+    public bool IsValid(string s) {
+        while(s.Contains("{}")||s.Contains("[]")||s.Contains("()"))
+        {
+        if (s.Contains("{}")){
+            s=s.Replace("{}","");
+        }
+        else if(s.Contains("[]")){
+            s=s.Replace("[]","");
+        }
+        else if(s.Contains("()")){
+            s=s.Replace("()","");
+        }
+        }
+        return s=="";
+    }
+}
+public class Program{
+     public static void Main()
+    {
+        // string s="[([]])";
+        // string s="()";
+        string s="()[]{}";
+        Solution p = new Solution();
+        Console.Write(p.IsValid(s));
+    }
+}

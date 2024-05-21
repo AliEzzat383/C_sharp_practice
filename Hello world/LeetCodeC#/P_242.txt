@@ -1,0 +1,37 @@
+public class Solution {
+    public Dictionary<char,int> FreqMap(string word){
+            Dictionary<char,int> fm=new Dictionary<char, int>();
+            foreach(char letter in word){
+                if(fm.Keys.Contains(letter)){
+                fm[letter]++;
+                }else{
+                    fm[letter]=1;
+                }
+            }
+            return fm;
+        }
+    public bool IsAnagram(string s, string t) {
+    if (s.Length != t.Length){
+        return false;
+    }
+    var freqMapS=FreqMap(s);
+    var freqMapT=FreqMap(t);
+    foreach (var kvp in freqMapS){
+        if (!freqMapT.ContainsKey(kvp.Key) || freqMapT[kvp.Key] != kvp.Value){
+            return false;
+        }
+    }
+
+    return true;
+    }
+}
+// class Program 
+// {
+//     public static void Main() 
+//     {
+//         string s="rat";
+//         string t="car";
+//         Solution sol = new Solution();
+//         Console.WriteLine(sol.IsAnagram(s,t));
+//     }
+// }

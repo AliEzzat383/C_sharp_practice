@@ -1,0 +1,14 @@
+public class Solution {
+    public bool ContainsDuplicate(int[] nums) {
+        return nums.Distinct().Count()!=nums.Count();
+    }
+}
+class Program 
+{
+    public static void Main() 
+    {
+        int[] nums=[1,2,3,4];
+        Solution sol = new Solution();
+        Console.WriteLine(sol.ContainsDuplicate(nums));
+    }
+}

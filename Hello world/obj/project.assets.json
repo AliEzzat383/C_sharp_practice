@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ali Ezzat\\OneDrive\\Desktop\\Dev history\\C sharp dev\\Hello world\\Hello world.csproj",
+      "projectUniqueName": "C:\\Users\\Ali Ezzat\\OneDrive\\Desktop\\Dev history\\C sharp dev\\C_sharp_practice\\Hello world\\Hello world.csproj",
       "projectName": "Hello world",
-      "projectPath": "C:\\Users\\Ali Ezzat\\OneDrive\\Desktop\\Dev history\\C sharp dev\\Hello world\\Hello world.csproj",
+      "projectPath": "C:\\Users\\Ali Ezzat\\OneDrive\\Desktop\\Dev history\\C sharp dev\\C_sharp_practice\\Hello world\\Hello world.csproj",
       "packagesPath": "C:\\Users\\Ali Ezzat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ali Ezzat\\OneDrive\\Desktop\\Dev history\\C sharp dev\\Hello world\\obj\\",
+      "outputPath": "C:\\Users\\Ali Ezzat\\OneDrive\\Desktop\\Dev history\\C sharp dev\\C_sharp_practice\\Hello world\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ali Ezzat\\AppData\\Roaming\\NuGet\\NuGet.Config"

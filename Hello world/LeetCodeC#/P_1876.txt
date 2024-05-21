@@ -1,0 +1,29 @@
+using System.Linq;
+using System.Text;
+
+public class Solution {
+    public int CountGoodSubstrings(string s) 
+    {
+        if(s.Length < 3) return 0;
+        HashSet<string> sub_map=[];
+        int count=0;
+        for(int i=0;i<s.Length-2;i++)
+        {
+            string x = s.Substring(i, 3);
+            sub_map.Add(x);
+            if (x.Distinct().Count() == 3)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+
+public class Program {
+    public static void Main() {
+        string s ="xyzzaz"; 
+        Solution p = new Solution();
+        Console.Write(p.CountGoodSubstrings(s));
+    }
+}

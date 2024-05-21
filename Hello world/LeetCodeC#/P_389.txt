@@ -1,0 +1,23 @@
+using System.Text;
+
+public class Solution {
+    public char FindTheDifference(string s, string t) 
+    {
+
+        foreach (char c in s){
+            if(t.Contains(c))
+            {
+                t=t.Remove(t.IndexOf(c),1);
+            }
+        }
+        return (t.Length != 0) ? t[0]:' ';
+    }
+}
+public class Program{
+     public static void Main()
+    {
+        string s="abcd",t="abcde";
+        Solution p = new Solution();
+        Console.Write(p.FindTheDifference(s,t));
+    }
+}
