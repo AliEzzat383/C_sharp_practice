@@ -1,0 +1,22 @@
+
+public class Solution {
+    public int SubtractProductAndSum(int n) {
+        List<int> digits=new List<int>();
+        int Product=1,Sum=0;
+        while(n>0){
+            int digit=n%10;
+            Product*=digit;
+            Sum+=digit;
+            n/=10;
+        }
+        return Product-Sum;
+    }
+}
+class Program {
+    public static void Main() {
+        int n=4321;
+        Solution sol = new Solution();
+        Console.WriteLine(sol.SubtractProductAndSum(n));
+        // Console.WriteLine("["+string.Join(",", sol.Shuffle(nums,n))+"]");
+    }
+}

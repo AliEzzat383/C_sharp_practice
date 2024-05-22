@@ -1,0 +1,29 @@
+
+public class Solution {
+    public int ArithmeticTriplets(int[] nums, int diff) {
+        int count=0;
+        List<int>numbers=new List<int>(nums);
+        for(int i=0;i<nums.Length-2;i++){
+            int j=i+1;
+            int j_val=numbers[i]+diff;
+            if(numbers.Contains(j_val)){
+                j=numbers.IndexOf(j_val);
+                int k_val=numbers[j]+diff;
+                if(numbers.Contains(k_val)){
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+}
+
+class Program {
+    public static void Main() {
+        int dif=3;
+        int[] nums=[0,1,4,6,7,10];
+        Solution sol = new Solution();
+        Console.WriteLine(sol.ArithmeticTriplets(nums,dif));
+        // Console.WriteLine("["+string.Join(",", sol.Shuffle(numbers,n))+"]");
+    }
+}

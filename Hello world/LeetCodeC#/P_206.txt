@@ -1,0 +1,68 @@
+public class ListNode
+{
+    public int val;
+    public ListNode next;
+    public ListNode(int val=0, ListNode next=null)
+    {
+        this.val = val;
+        this.next = next;
+    }
+    public void PrintList()
+    {
+        ListNode current = this;
+        while (current != null)
+        {
+            Console.Write(current.val + "->");
+            current = current.next;
+        }
+        Console.WriteLine("NULL");
+    }
+}
+
+public class Solution {
+    public ListNode ReverseList(ListNode head) {
+        ListNode prev=null,cur=head,nxt=null;
+        while(cur!=null){
+            nxt=cur.next;
+            cur.next=prev;
+            prev=cur;
+            cur=nxt;
+        }
+        return prev;
+    }
+}
+public class LinkedList 
+{
+    public ListNode head;
+    public LinkedList(List<int>? values =null) {
+        head = CreateLinkedList(values);
+    }
+    private static ListNode CreateLinkedList(List<int> values) 
+    {
+        ListNode head = null;
+        ListNode current = null;
+
+        foreach (int value in values) 
+        {
+            ListNode newNode = new ListNode(value);
+            if (head == null) {
+                head = newNode;
+                current = head;
+            } 
+            else {
+                current.next = newNode;
+                current = newNode;
+            }
+        }
+        return head;
+    }
+}
+class Program 
+{
+    public static void Main() 
+    {
+        List<int> values = new List<int> ([1, 2, 3, 4, 5]);
+        LinkedList list = new LinkedList(values);
+        list.head.PrintList();
+    }
+}

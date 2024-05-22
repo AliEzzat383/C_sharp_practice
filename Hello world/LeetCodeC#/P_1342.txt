@@ -1,0 +1,26 @@
+
+public class Solution 
+{
+    public int NumberOfSteps(int num) 
+    {
+        return RecursionHelper(num,0);
+    }
+    private int RecursionHelper(int num, int count)
+    {
+        if(num>0)
+        {
+            if(num%2==0){return RecursionHelper(num/2,count+1);}
+            else{return RecursionHelper(num-1,count+1);}
+        }
+        return count;
+    }
+}
+
+class Program {
+    public static void Main() {
+        int num=123;
+        Solution sol = new Solution();
+        Console.WriteLine(sol.NumberOfSteps(num));
+        // Console.WriteLine("["+string.Join(",", sol.Shuffle(nums,n))+"]");
+    }
+}
