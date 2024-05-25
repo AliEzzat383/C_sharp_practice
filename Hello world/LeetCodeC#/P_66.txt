@@ -1,0 +1,43 @@
+using System.Security.Cryptography.X509Certificates;
+
+public class Solution {
+    private int[] digits; // Make digits a member variable
+
+    public int[] PlusOne(int[] digits) {
+        this.digits = digits; // Assign the input digits to the member variable
+        int n = digits.Length - 1;
+        PlusOneHelper(n, 1);
+        if (this.digits[0] == 0) {
+            List<int> listDigits = this.digits.ToList();
+            listDigits.Insert(0, 1);
+            this.digits = listDigits.ToArray();
+        }
+        return this.digits;
+    }
+
+    private void PlusOneHelper(int n, int carry) {
+        if (n >= 0 && carry==1) {
+            Console.WriteLine(n);
+            int temp = this.digits[n]; // Use the member variable instead of the argument
+            this.digits[n] = (temp + carry) % 10;
+            carry = (temp + carry) / 10;
+            PlusOneHelper(n - 1, carry);
+        }
+    }
+}
+
+public class Program {
+    public static void Main() {
+        int[] nums =[9,8,7,6,5,4,3,2,1,0];
+        // int[] nums =[9,9];
+        Solution soln=new();
+        nums=soln.PlusOne(nums);
+        // Console.Write();
+        Console.WriteLine("["+string.Join(",", nums)+"]");
+        // foreach(int i in group){
+        //     Console.Write(i);
+        //     Console.Write(",");
+        // }
+        
+    }
+}

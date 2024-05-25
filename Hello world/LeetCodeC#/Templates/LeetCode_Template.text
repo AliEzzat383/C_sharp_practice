@@ -8,8 +8,9 @@
 // public class Program{
 //      public static void Main()
 //     {
-//         data type x=  ;
-//         Solution p = new Solution();
-//         Console.Write(p.function(x));
+//         var x=  ;
+//         Solution soln = new Solution();
+//         Console.Write(soln.function(x));
+//         Console.WriteLine("["+string.Join(",", soln.function(x))+"]");
 //     }
 // }

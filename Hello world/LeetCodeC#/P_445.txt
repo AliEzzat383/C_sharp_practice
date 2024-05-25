@@ -1,0 +1,108 @@
+
+//  Definition for singly-linked list.
+
+public class ListNode {
+      public int val;
+      public ListNode next;
+      public ListNode(int val=0, ListNode next=null) {
+          this.val = val;
+          this.next = next;
+      }
+  }
+ 
+public class Solution {
+    public ListNode CreateLinkedlistFrom(int[] values)
+{   ListNode head=new(values[0]);
+    ListNode cur=head;
+    foreach(int value in values[1..]){
+        cur.next=new ListNode(value);
+        cur=cur.next;
+    }
+    return head;
+}
+    public void PrintLinkedList(ListNode head){
+    var cur=head;
+    while(cur!=null)
+    {
+        Console.Write(cur.val);
+        cur=cur.next;
+        Console.Write("->");
+    }
+    Console.WriteLine("NULL");
+    }
+    public ListNode AddTwoNumbers(ListNode l1, ListNode l2) 
+    {
+        ListNode ReverseList(ListNode head)
+        {
+            ListNode prev=null,cur=head,next=null;
+            while(cur!=null){
+                next=cur.next;
+                cur.next=prev;
+                prev=cur;
+                cur=next;
+            }
+            head=prev;
+            return head;
+        }
+        l1=ReverseList(l1);
+        l2=ReverseList(l2);
+
+        ListNode cur1=l1,cur2=l2;
+        int carry=0;
+        int sum=cur1.val+cur2.val+carry;
+        carry=sum/10;
+
+        ListNode res=new(sum%10),cur=res;
+        Console.WriteLine(res.val);
+
+        cur1=cur1.next;
+        cur2=cur2.next;
+        while(cur1!=null && cur2!=null){
+            sum=cur1.val+cur2.val+carry;
+            cur.next=new ListNode(sum%10);
+            carry=sum/10;
+            cur1=cur1.next;
+            cur2=cur2.next;
+            cur=cur.next;
+        }
+        while(cur1!=null){
+            sum=cur1.val+carry;
+            carry=sum/10;
+            cur.next=new ListNode(sum%10);
+            cur=cur.next;
+            cur1=cur1.next;
+        }
+        while(cur2!=null){
+            sum=cur2.val+carry;
+            carry=sum/10;
+            cur.next=new ListNode(sum%10);
+            cur=cur.next;
+            cur2=cur2.next; 
+        }
+        if(carry!=0)
+        {
+            cur.next=new ListNode(carry);
+        }
+        res=ReverseList(res);
+        return res;
+    }
+}
+public class Program
+{
+     public static void Main()
+    {
+        int[]list1=[8,9,9];
+        int[]list2=[2];
+        Solution soln = new Solution();
+        ListNode l1= soln.CreateLinkedlistFrom(list1);
+        ListNode l2= soln.CreateLinkedlistFrom(list2);
+        // soln.PrintLinkedList(l1);
+        // soln.PrintLinkedList(l2);
+        var res=soln.AddTwoNumbers(l1,l2);
+        soln.PrintLinkedList(res);
+
+        // Console.Write();
+        // Console.WriteLine("["+string.Join(",", p.function(x))+"]");
+    }
+
+}

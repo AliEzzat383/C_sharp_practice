@@ -1,32 +1,16 @@
-﻿
-
-public class Solution {
-    public IList<IList<int>> Generate(int numRows) {
-        IList<IList<int>> res = [[1]];
-        for(int i=1;i<numRows;i++){
-            IList<int> temp = new List<int>(res[i - 1]);
-            temp.Insert(0,0);
-            temp.Add(0);
-            IList<int> row=[];
-            for(int j=0;j<temp.Count-1;j++)
-            {row.Add(temp[j] + temp[j + 1]);}
-            res.Add(row);
-        }
-        return res;
-    }
-}
-
-public class Program {
-    public static void Main() {
-        int nRows = 5;
-        Solution solution = new Solution();
-        IList<IList<int>> triangle = solution.Generate(nRows);
-
-        foreach (IList<int> row in triangle) {
-            foreach (int num in row) {
-                Console.Write(num + " ");
-            }
-            Console.WriteLine();
-        }
-    }
-}
+﻿// public class Solution
+// {
+//     public bool function(string s)
+//     {
+  
+//     }
+// }
+// public class Program{
+//      public static void Main()
+//     {
+//         var x=  ;
+//         Solution soln = new Solution();
+//         Console.Write(soln.function(x));
+//         Console.WriteLine("["+string.Join(",", soln.function(x))+"]");
+//     }
+// }
